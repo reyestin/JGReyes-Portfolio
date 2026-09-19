@@ -82,6 +82,12 @@ export const TECH_STACK = {
     // Databases, Caching & ORM
     ...buildTechStack(SKILL_STACK.DatabaseStack),
 
+      // Data Analytics
+    ...buildTechStack(SKILL_STACK.DataAnalyticsStack),
+
+    // Networking
+    ...buildTechStack(SKILL_STACK.NetworkingStack),
+
     // Cloud, Storage & DevOps
     ...buildTechStack(SKILL_STACK.CloudDevOpsStack),
 
@@ -172,14 +178,9 @@ export const PROJECTS_LIST: IProject[] = [
         liveUrl: "https://arms-v4.vercel.app/",
         sourceUrl: "https://github.com/ChiragChrg/arms-v4",
         technologies: [
-            TECH_STACK.Nextjs,
             TECH_STACK.TypeScript,
-            TECH_STACK.TailwindCSS,
-            TECH_STACK.Redux,
-            TECH_STACK.Prisma,
             TECH_STACK.MongoDB,
             TECH_STACK.Authjs,
-            TECH_STACK.EdgeStore,
         ],
         features: [
             {
@@ -246,14 +247,9 @@ export const PROJECTS_LIST: IProject[] = [
         liveUrl: "https://arms-v3.vercel.app/",
         sourceUrl: "https://github.com/ChiragChrg/arms-v3",
         technologies: [
-            TECH_STACK.Nextjs,
             TECH_STACK.TypeScript,
-            TECH_STACK.TailwindCSS,
-            TECH_STACK.TanStackQuery,
-            TECH_STACK.Zustand,
             TECH_STACK.MongoDB,
             TECH_STACK.Authjs,
-            TECH_STACK.EdgeStore
         ],
         features: [
             {
@@ -316,13 +312,9 @@ export const PROJECTS_LIST: IProject[] = [
         liveUrl: "https://vortexa.netlify.app/",
         sourceUrl: "https://github.com/ChiragChrg/vortexa",
         technologies: [
-            TECH_STACK.Astro,
             TECH_STACK.Reactjs,
             TECH_STACK.TypeScript,
-            TECH_STACK.TailwindCSS,
-            TECH_STACK.D3js,
-            TECH_STACK.Nanostores,
-            TECH_STACK.RESTAPI
+            TECH_STACK.RESTAPI,
         ],
         features: [
             COMMON_FEATURES.Responsive,
@@ -383,12 +375,9 @@ export const PROJECTS_LIST: IProject[] = [
         liveUrl: "https://nextmart.vercel.app/",
         sourceUrl: "https://github.com/ChiragChrg/nextmart",
         technologies: [
-            TECH_STACK.Nextjs,
             TECH_STACK.TypeScript,
             TECH_STACK.MongoDB,
             TECH_STACK.Authjs,
-            TECH_STACK.Redux,
-            TECH_STACK.TailwindCSS
         ],
         features: [
             COMMON_FEATURES.Responsive,
