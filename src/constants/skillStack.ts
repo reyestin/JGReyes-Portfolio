@@ -92,16 +92,16 @@ export const BackendApisStack = [
         link: "https://expressjs.com/",
     },
     {
+        name: "Flask",
+        description: "Lightweight Python web framework used for building web applications and APIs.",
+        icon: SKILLS.FlaskIcon,
+        link: "https://flask.palletsprojects.com/",
+    },
+    {
         name: "PHP",
         description: "Server-side scripting language for building dynamic web applications.",
         icon: SKILLS.PhpIcon,
         link: "https://www.php.net/",
-    },
-    {
-        name: ".NET",
-        description: "Developer platform for building web, desktop, mobile, and cloud applications using C# and other languages.",
-        icon: SKILLS.DotnetIcon,
-        link: "https://learn.microsoft.com/en-us/dotnet/",
     },
     {
         name: "REST API",
@@ -117,16 +117,16 @@ export const BackendApisStack = [
     },
     {
         name: "Auth.js",
-        description: "Authentication library designed specifically for Next.js applications, providing robust authentication features and seamless integration.",
+        description: "Authentication library designed for modern web applications, providing secure authentication features and integrations.",
         icon: SKILLS.NextAuthIcon,
         link: "https://authjs.dev/",
     },
     {
         name: "Google APIs",
-        description: "Suite of APIs and services for integrating Google products such as Drive, Maps, and more.",
+        description: "Suite of APIs and services for integrating Google products and services into applications.",
         icon: SKILLS.GoogleCloud,
         link: "https://developers.google.com/",
-    }
+    },
 ] as const;
 // #endregion
 
@@ -149,6 +149,76 @@ export const DatabaseStack = [
         description: "Advanced open-source relational database with strong SQL compliance and extensibility.",
         icon: SKILLS.PostgresIcon,
         link: "https://www.postgresql.org/",
+    },
+    {
+        name: "MariaDB",
+        description: "Open-source relational database management system compatible with MySQL for storing and managing structured data.",
+        icon: SKILLS.MariaDBIcon,
+        link: "https://mariadb.org/",
+    },
+    {
+        name: "SQLite",
+        description: "Lightweight, serverless relational database engine commonly used for local and embedded applications.",
+        icon: SKILLS.SQLiteIcon,
+        link: "https://www.sqlite.org/",
+    },
+    {
+        name: "DBeaver",
+        description: "Database management and development tool for working with SQL databases and database systems.",
+        icon: SKILLS.DbeaverIcon,
+        link: "https://dbeaver.io/",
+    },
+] as const;
+// #endregion
+
+// #region Data Analytics
+export const DataAnalyticsStack = [
+    {
+        name: "Data Analysis",
+        description: "Analyzing data to identify patterns, trends, relationships, and useful insights.",
+        icon: SKILLS.DataAnalysisIcon,
+        link: "https://pandas.pydata.org/",
+    },
+    {
+        name: "Data Visualization",
+        description: "Presenting data through charts and visual representations to make information easier to understand.",
+        icon: SKILLS.DataVisualizationIcon,
+        link: "https://matplotlib.org/",
+    },
+    {
+        name: "Data Cleaning",
+        description: "Preparing datasets by identifying and handling missing, duplicate, incorrect, or inconsistent data.",
+        icon: SKILLS.DataCleaningIcon,
+        link: "https://pandas.pydata.org/",
+    },
+    {
+        name: "Basic Statistics",
+        description: "Applying basic statistical concepts to summarize, interpret, and understand data.",
+        icon: SKILLS.StatisticsIcon,
+        link: "https://www.r-project.org/",
+    },
+] as const;
+// #endregion
+
+// #region Networking
+export const NetworkingStack = [
+    {
+        name: "Computer Networking",
+        description: "Fundamentals of connecting computers and devices to communicate and share resources over networks.",
+        icon: SKILLS.NetworkingIcon,
+        link: "https://www.cisco.com/",
+    },
+    {
+        name: "TCP/IP",
+        description: "Core networking protocols used for communication between devices across networks.",
+        icon: SKILLS.TcpIpIcon,
+        link: "https://www.rfc-editor.org/rfc/rfc9293",
+    },
+    {
+        name: "IP Addressing",
+        description: "Understanding IP addresses and their role in identifying and communicating with devices on a network.",
+        icon: SKILLS.IpAddressingIcon,
+        link: "https://www.cisco.com/",
     },
 ] as const;
 // #endregion
@@ -181,13 +251,13 @@ export const CloudDevOpsStack = [
     },
     {
         name: "Vercel",
-        description: "Deployment platform optimized for Next.js and frontend frameworks with a global edge network.",
+        description: "Deployment platform for modern web applications and frontend frameworks.",
         icon: SKILLS.VercelIcon,
         link: "https://vercel.com/",
     },
     {
         name: "Render",
-        description: "Cloud platform for hosting web services, static sites, and background workers with simple configuration.",
+        description: "Cloud platform for hosting web services, static sites, and background workers.",
         icon: SKILLS.RenderIcon,
         link: "https://render.com/",
     },
@@ -204,13 +274,13 @@ export const ToolingTestingStack = [
     },
     {
         name: "GitHub",
-        description: "Code hosting platform for Git repositories with collaboration and CI/CD features.",
+        description: "Code hosting platform for Git repositories with collaboration and development tools.",
         icon: SKILLS.GithubIcon,
         link: "https://github.com/",
     },
     {
         name: "npm",
-        description: "Package manager for JavaScript, used to install and manage project dependencies.",
+        description: "Package manager for JavaScript used to install and manage project dependencies.",
         icon: SKILLS.NpmIcon,
         link: "https://www.npmjs.com/",
     },
@@ -224,7 +294,7 @@ export const ToolingTestingStack = [
         name: "Vite",
         description: "Modern build tooling for web development with rapid startup and hot module replacement.",
         icon: SKILLS.ViteIcon,
-        link: "https://vitejs.dev/",
+        link: "https://vite.dev/",
     },
 ] as const;
 // #endregion
@@ -275,6 +345,8 @@ export default {
     StateEventStack,
     BackendApisStack,
     DatabaseStack,
+    DataAnalyticsStack,
+    NetworkingStack,
     CloudDevOpsStack,
     ToolingTestingStack,
     ConfigTemplatingStack,
