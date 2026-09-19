@@ -11,6 +11,8 @@ const CloudDevOpsStack = skillStacks.CloudDevOpsStack;
 const ToolingTestingStack = skillStacks.ToolingTestingStack;
 const ConfigTemplatingStack = skillStacks.ConfigTemplatingStack;
 const IdesDesignStack = skillStacks.IdesDesignStack;
+const DataAnalyticsStack = skillStacks.DataAnalyticsStack;
+const NetworkingStack = skillStacks.NetworkingStack;
 ---
 
 <section id="skills" class="w-full min-h-screen py-4 pt-14 bg-background">
@@ -101,6 +103,25 @@ const IdesDesignStack = skillStacks.IdesDesignStack;
         >
             <SkillTitle title="IDEs & Design" color="primary" />
             <SkillGrid stack={IdesDesignStack} />
+        </div>
+    </div>
+
+        <!-- Data Analytics & Networking Skills -->
+    <div
+        class="Fade_Up flex justify-center items-start flex-col lg:flex-row gap-2"
+    >
+        <div
+            class="Fade_Up flex_center flex-col gap-4 py-4 xs:p-4 w-full h-full"
+        >
+            <SkillTitle title="Data Analytics" color="primary" />
+            <SkillGrid stack={DataAnalyticsStack} />
+        </div>
+
+        <div
+            class="Fade_Up flex_center flex-col gap-4 py-4 xs:p-4 w-full h-full"
+        >
+            <SkillTitle title="Networking" color="primary" />
+            <SkillGrid stack={NetworkingStack} />
         </div>
     </div>
 </section>

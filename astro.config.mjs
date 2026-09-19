@@ -12,7 +12,7 @@ export default defineConfig({
     preact(),
     compress({
       CSS: true,
-      HTML: true,
+      HTML: false,
       JavaScript: true,
     })
   ],
