@@ -41,34 +41,16 @@ export const WebLanguagesStack = [
         link: "https://www.python.org/",
     },
     {
-        name: "C++",
-        description: "General-purpose programming language with support for low-level memory manipulation and high-performance applications.",
-        icon: SKILLS.CppIcon,
-        link: "https://isocpp.org/",
-    },
-    {
         name: "Java",
         description: "Object-oriented programming language widely used for enterprise, Android, and backend applications.",
         icon: SKILLS.JavaIcon,
         link: "https://www.oracle.com/java/",
     },
     {
-        name: "C#",
-        description: "Modern, object-oriented language for building applications on the .NET platform.",
-        icon: SKILLS.CSharpIcon,
-        link: "https://learn.microsoft.com/en-us/dotnet/csharp/",
-    },
-    {
         name: "PHP",
         description: "Server-side scripting language for building dynamic web applications.",
         icon: SKILLS.PhpIcon,
         link: "https://www.php.net/",
-    },
-    {
-        name: "R",
-        description: "Language and environment for statistical computing and graphics.",
-        icon: SKILLS.RIcon,
-        link: "https://www.r-project.org/",
     },
 ] as const;
 // #endregion
@@ -81,88 +63,16 @@ export const FrontendLibrariesStack = [
         icon: SKILLS.ReactIcon,
         link: "https://react.dev/",
     },
-    {
-        name: "Next.js",
-        description: "React framework for server-side rendering, static site generation, and routing, offering improved performance and SEO optimization.",
-        icon: SKILLS.NextIcon,
-        link: "https://nextjs.org/",
-    },
-    {
-        name: "Astro",
-        description: "Frontend framework for streamlined development, integrating with popular tools to create fast, modern websites with minimal client-side JavaScript.",
-        icon: SKILLS.AstroIcon,
-        link: "https://astro.build/",
-    },
-    {
-        name: "Tailwind CSS",
-        description: "Utility-first CSS framework providing atomic utility classes for rapid UI development with minimal custom CSS.",
-        icon: SKILLS.TailwindIcon,
-        link: "https://tailwindcss.com/",
-    },
-    {
-        name: "Preact.js",
-        description: "Fast, lightweight alternative to React with the same modern API in a smaller bundle.",
-        icon: SKILLS.PreactIcon,
-        link: "https://preactjs.com/",
-    },
-    {
-        name: "D3.js",
-        description: "Versatile JavaScript library for data visualization, enabling dynamic, interactive graphics and charts by binding data to DOM elements.",
-        icon: SKILLS.D3JsIcon,
-        link: "https://d3js.org/",
-    },
-    {
-        name: "GSAP",
-        description: "Robust JavaScript animation library for performant, timeline-based animations on the web.",
-        icon: SKILLS.GSAPIcon,
-        link: "https://gsap.com/",
-    },
-    {
-        name: "Framer Motion",
-        description: "Animation library for React that provides declarative, production-ready motion and transitions.",
-        icon: SKILLS.MotionIcon,
-        link: "https://www.framer.com/motion/",
-    },
 ] as const;
 // #endregion
 
 // #region State & Events
 export const StateEventStack = [
     {
-        name: "Redux",
-        description: "Predictable state management library for JavaScript applications, enabling consistent and scalable code.",
-        icon: SKILLS.ReduxIcon,
-        link: "https://redux.js.org/",
-    },
-    {
-        name: "Zustand",
-        description: "Tiny, fast, and scalable state management for React applications, providing a simple and intuitive API.",
-        icon: SKILLS.ZustandIcon,
-        link: "https://zustand-demo.pmnd.rs/",
-    },
-    {
-        name: "Nanostores",
-        description: "Lightweight state management library for JavaScript applications, designed for simplicity and high performance.",
-        icon: SKILLS.NanostoresIcon,
-        link: "https://github.com/nanostores/nanostores",
-    },
-    {
-        name: "TanStack Query",
-        description: "React library for managing, caching, and synchronizing server state with a powerful and intuitive API.",
-        icon: SKILLS.ReactQueryIcon,
-        link: "https://tanstack.com/query/latest/",
-    },
-    {
         name: "Socket.io",
         description: "Real-time bidirectional communication library for building interactive web applications.",
         icon: SKILLS.SocketIoIcon,
         link: "https://socket.io/",
-    },
-    {
-        name: "NATS",
-        description: "High-performance messaging system for cloud-native applications, enabling pub/sub, request-reply, and streaming.",
-        icon: SKILLS.NatsIcon,
-        link: "https://nats.io/",
     },
 ] as const;
 // #endregion
@@ -240,36 +150,6 @@ export const DatabaseStack = [
         icon: SKILLS.PostgresIcon,
         link: "https://www.postgresql.org/",
     },
-    {
-        name: "Firestore",
-        description: "Serverless NoSQL document database from Firebase for real-time and offline-first applications.",
-        icon: SKILLS.FirebaseIcon,
-        link: "https://firebase.google.com/docs/firestore",
-    },
-    {
-        name: "Prisma",
-        description: "Next-generation ORM for Node.js and TypeScript, simplifying database access and schema management.",
-        icon: SKILLS.PrismaIcon,
-        link: "https://www.prisma.io/",
-    },
-    {
-        name: "Redis",
-        description: "In-memory data structure store used for caching, message brokering, and real-time analytics.",
-        icon: SKILLS.RedisIcon,
-        link: "https://redis.io/",
-    },
-    {
-        name: "EdgeStore",
-        description: "Open-source file storage service designed for scalability and performance, with efficient updates and a minimal API.",
-        icon: SKILLS.EdgeStoreIcon,
-        link: "https://edgestore.dev/",
-    },
-    {
-        name: "AWS S3",
-        description: "Highly scalable object storage service for static assets, backups, and file uploads.",
-        icon: SKILLS.AwsS3Icon,
-        link: "https://aws.amazon.com/s3/",
-    },
 ] as const;
 // #endregion
 
@@ -346,64 +226,16 @@ export const ToolingTestingStack = [
         icon: SKILLS.ViteIcon,
         link: "https://vitejs.dev/",
     },
-    {
-        name: "Jest",
-        description: "JavaScript testing framework for unit and integration tests with a simple API.",
-        icon: SKILLS.JestIcon,
-        link: "https://jestjs.io/",
-    },
-    {
-        name: "Postman",
-        description: "API platform for designing, testing, and documenting HTTP APIs.",
-        icon: SKILLS.PostmanIcon,
-        link: "https://www.postman.com/",
-    },
-    {
-        name: "Swagger / OpenAPI",
-        description: "Specification and tooling ecosystem for designing, documenting, and testing REST APIs.",
-        icon: SKILLS.SwaggerIcon,
-        link: "https://swagger.io/",
-    },
-    {
-        name: "OpenTelemetry",
-        description: "Observability framework for generating, collecting, and exporting traces, metrics, and logs.",
-        icon: SKILLS.OpenTelemetryIcon,
-        link: "https://opentelemetry.io/",
-    },
-    {
-        name: "Streamlit",
-        description: "Python framework for building data apps and dashboards with minimal boilerplate.",
-        icon: SKILLS.StreamlitIcon,
-        link: "https://streamlit.io/",
-    },
 ] as const;
 // #endregion
 
 // #region Configuration & Templating
 export const ConfigTemplatingStack = [
     {
-        name: "YAML",
-        description: "Human-readable data serialization format commonly used for configuration files.",
-        icon: SKILLS.YamlIcon,
-        link: "https://yaml.org/",
-    },
-    {
         name: "JSON",
         description: "Lightweight data-interchange format widely used for APIs, configuration, and structured data.",
         icon: SKILLS.JsonIcon,
         link: "https://www.json.org/",
-    },
-    {
-        name: "Markdown",
-        description: "Lightweight markup language for formatting documentation, notes, and content in plain text.",
-        icon: SKILLS.MarkdownIcon,
-        link: "https://www.markdownguide.org/",
-    },
-    {
-        name: "FreeMarker",
-        description: "Java-based template engine for generating HTML, emails, and other text outputs from templates.",
-        icon: SKILLS.FreeMarkerIcon,
-        link: "https://freemarker.apache.org/",
     },
 ] as const;
 // #endregion
