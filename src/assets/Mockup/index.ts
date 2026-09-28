@@ -7,6 +7,8 @@ import SrinivasMockup from "./SEM-Mockup.webp";
 import VortexaMockup from "./Vortexa-Mockup.webp";
 import XreconMockup from "./Xrecon-Mockup.webp";
 import YoatubeMockup from "./Yoatube-Mockup.webp";
+import WSLoungeMockup from "./WSLounge-Mockup.webp";
+
 
 export default {
     ARMSv1Mockup,
@@ -18,4 +20,5 @@ export default {
     VortexaMockup,
     XreconMockup,
     YoatubeMockup,
+    WSLoungeMockup,
 };

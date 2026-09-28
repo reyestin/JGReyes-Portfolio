@@ -167,72 +167,61 @@ const COMMON_FEATURES = {
 export const PROJECTS_LIST: IProject[] = [
     {
         isHidden: false,
-        name: "ARMS v4",
-        shortDescription: "Next-generation academic resource platform for frictionless student access and robust faculty management.",
-        description: "ARMS v4 (Academic Resource Management System) is a modern educational platform enabling students to effortlessly browse and download subject-specific study materials uploaded by faculty. With advanced architecture powered by Redux Toolkit, Prisma ORM, and Authjs, ARMS v4 delivers a fast, secure, and scalable experience. Anonymous login, structured resource management, and integrated UI streamlining make it ideal for institutions of any size. Building on previous versions—now faster, more intuitive, and developer-friendly.",
-        logoImage: LOGOS.ArmsLogo,
-        previewImage: SCREENSHOTS.Armsv3Shots,
-        deviceMockupImage: MOCKUPS.ARMSv3Mockup,
+        name: "Integrated Study Hub Management System for WS Students & Professionals Lounge",
+        shortDescription: "A web-based management system for managing reservations, memberships, check-ins, and real-time occupancy at WS Students & Professionals Lounge.",
+        description: "The Integrated Study Hub Management System for WS Students & Professionals Lounge is a web-based system designed to streamline the daily operations of the lounge. It allows students and professionals to manage room reservations, membership plans, check-in and check-out, while providing administrators with tools for reservation approval, occupancy monitoring, and user management. The system also provides real-time Common Area occupancy tracking to help manage the lounge's available capacity.",
+        logoImage: LOGOS.WSLoungeLogo,
+        previewImage: SCREENSHOTS.WSLoungeShots,
+        deviceMockupImage: MOCKUPS.WSLoungeMockup,
         theme: "#FFF",
         status: "completed",
-        liveUrl: "https://arms-v4.vercel.app/",
-        sourceUrl: "https://github.com/ChiragChrg/arms-v4",
+        liveUrl: "https://wslounge.onrender.com/",
+        sourceUrl: "https://github.com/WS-Students-Professionals-Lounge",
         technologies: [
-            TECH_STACK.TypeScript,
-            TECH_STACK.MongoDB,
-            TECH_STACK.Authjs,
+            TECH_STACK.Python,
+            TECH_STACK.Flask,
+            TECH_STACK.PostgreSQL,
+            TECH_STACK.HTML,
+            TECH_STACK.CSS,
+            TECH_STACK.JavaScript
         ],
         features: [
             {
-                title: "Anonymous Student Access",
-                description: "Effortless anonymous login for students to browse and download study materials."
+                title: "Room Reservation Management",
+                description: "Users can reserve available rooms and Common Area slots through the online reservation system."
             },
             {
-                title: "Role-based Secure Authentication",
-                description: "Authjs with Prisma adapter enables secure access for faculty and admin accounts."
+                title: "Open Time and Fixed Time Reservations",
+                description: "Supports both open-time reservations and fixed-time reservations with scheduled start and end times."
             },
             {
-                title: "Centralized Resource Management",
-                description: "Faculties can efficiently upload, organize, and manage academic PDF documents."
+                title: "Membership Management",
+                description: "Users can manage their membership plans and use active membership sessions within the Common Area."
             },
             {
-                title: "Bulk Upload & Fast Download",
-                description: "Quick PDF bulk uploads for faculty and rapid download for students."
+                title: "Check-In and Check-Out",
+                description: "Tracks user attendance through check-in and check-out records for active lounge sessions."
             },
             {
-                title: "Optimistic & Cached Data Fetching",
-                description: "Redux Toolkit Query enables fast UI, tag-based caching, and real-time updates."
+                title: "Real-Time Occupancy Monitoring",
+                description: "Administrators can monitor current room occupancy and Common Area usage in real time."
             },
             {
-                title: "Scalable & Consistent Backend",
-                description: "Prisma ORM powers a scalable and reliable database schema."
+                title: "Reservation Approval",
+                description: "Administrators can review and approve reservation requests before users can use the selected space."
             },
-            COMMON_FEATURES.Responsive,
-            COMMON_FEATURES.SEO,
+            {
+                title: "User Notifications",
+                description: "Users receive notifications for reservation updates and confirmed bookings."
+            },
+            {
+                title: "Admin Dashboard",
+                description: "Provides administrators with a centralized dashboard for monitoring reservations, memberships, attendance, and room status."
+            },
+            COMMON_FEATURES.Responsive
         ],
-        logoSize: 50,
-        versions: [
-            {
-                title: "ARMS v4",
-                version: "4",
-                url: "https://arms-v4.vercel.app/"
-            },
-            {
-                title: "ARMS v3",
-                version: "3",
-                url: "https://arms-v3.vercel.app/"
-            },
-            {
-                title: "ARMS v2",
-                version: "2",
-                url: "https://armss.netlify.app/"
-            },
-            {
-                title: "ARMS v1",
-                version: "1",
-                url: "https://github.com/ChiragChrg/arms-php"
-            },
-        ]
+        logoSize: 55,
+        versions: []
     },
     {
         isHidden: true,

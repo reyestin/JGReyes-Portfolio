@@ -14,6 +14,9 @@ import Armsv2Shots from "./ARMSv2.webp"
 import NextmartShots from "./NextMart.webp"
 import VortexaShots from "./Vortexa.webp"
 import Armsv3Shots from "./ARMSv3.webp"
+import WSLoungeShots from "./WSLounge.webp"
+
+
 
 export default {
     KalciShots,
@@ -24,6 +27,7 @@ export default {
     FilmstackShots,
     Armsv1Shots,
     DaysbeyondShots,
+    WSLoungeShots,
     PikturesShots,
     SrinivasShots,
     YoatubeShots,
