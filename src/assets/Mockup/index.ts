@@ -8,6 +8,7 @@ import VortexaMockup from "./Vortexa-Mockup.webp";
 import XreconMockup from "./Xrecon-Mockup.webp";
 import YoatubeMockup from "./Yoatube-Mockup.webp";
 import WSLoungeMockup from "./WSLounge-Mockup.webp";
+import VaperViperMockup from "./VaperViper-Mockup.png";
 
 
 export default {
@@ -21,4 +22,5 @@ export default {
     XreconMockup,
     YoatubeMockup,
     WSLoungeMockup,
+    VaperViperMockup,
 };

@@ -194,6 +194,26 @@ const projectImageUrl = new URL(project.previewImage.src, siteConfig.siteUrl).to
         </div>
     </div>
 
+    <!-- Project Screenshots -->
+    {
+        project.screenshots && project.screenshots.length > 0 && (
+            <SectionTitle title="Project Screenshots" color="primary">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-2">
+                    {project.screenshots.map((screenshot, index) => (
+                        <div class="Fade_Up overflow-hidden rounded-lg border border-primaryLiteAlt bg-background/40">
+                            <Image
+                                src={screenshot}
+                                alt={`${project.name} Screenshot ${index + 1}`}
+                                class="w-full h-auto object-cover"
+                                loading="lazy"
+                            />
+                        </div>
+                    ))}
+                </div>
+            </SectionTitle>
+        )
+    }
+
     <!-- Project Features -->
     <SectionTitle title="Features" color="primary">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-y-4 md:gap-y-6 md:gap-x-10 md:mx-4">

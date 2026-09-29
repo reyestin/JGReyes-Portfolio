@@ -3,6 +3,7 @@ import SCREENSHOTS from "@assets/Shots"
 import MOCKUPS from "@assets/Mockup"
 import SKILL_STACK from "@/constants/skillStack";
 import { buildTechStack } from "@/utils/commonUtils";
+import Mockup from "@assets/Mockup";
 
 //#region Types
 /**
@@ -20,6 +21,7 @@ export interface IProject {
 
     logoImage: ImageMetadata;
     previewImage: ImageMetadata;
+    screenshots?: ImageMetadata[];
     deviceMockupImage: ImageMetadata;
 
     theme: string;
@@ -224,69 +226,52 @@ export const PROJECTS_LIST: IProject[] = [
         versions: []
     },
     {
-        isHidden: true,
-        name: "ARMS v3",
-        shortDescription: "An educational platform designed to empower students with easy access to study materials. Students can browse & download PDFs files.",
-        description: "ARMS (Academic Resource Management System) is an all-inclusive educational platform designed to empower students with easy access to study materials for their respective subjects. By logging in anonymously, students can conveniently browse and download PDF documents uploaded by authorized faculties. With a centralized approach, ARMS ensures that students can effortlessly find and obtain the necessary resources they need for their academic pursuits. It's a user-friendly solution that streamlines the process of resource management, providing a seamless experience for both students and faculties alike.",
-        logoImage: LOGOS.ArmsLogo,
-        previewImage: SCREENSHOTS.Armsv3Shots,
-        deviceMockupImage: MOCKUPS.ARMSv3Mockup,
-        theme: "#FFF",
+        isHidden: false,
+        name: "Vaper Viper",
+        shortDescription: "A responsive vape shop website designed to showcase products through a clean and engaging interface.",
+        description: "Vaper Viper is a locally developed responsive vape shop website featuring a landing page, About Us section, product showcase, and Contact section. The project focuses on a clean layout, responsive design, and an easy browsing experience.",
+        logoImage: LOGOS.VaperViperLogo,
+        previewImage: SCREENSHOTS.VaperViperShots,
+        screenshots: [
+            SCREENSHOTS.VaperViperShots,
+            SCREENSHOTS.VaperViperAboutShots,
+            SCREENSHOTS.VaperViperContactShots,
+            SCREENSHOTS.VaperViperContactInfoShots,
+            SCREENSHOTS.VaperViperLandingShots,
+            SCREENSHOTS.VaperViperLandingPageShots,
+            SCREENSHOTS.VaperViperProductShots,
+            SCREENSHOTS.VaperViperProductsShots
+        ],
+        deviceMockupImage: MOCKUPS.VaperViperMockup,
+        theme: "#111",
         status: "completed",
-        liveUrl: "https://arms-v3.vercel.app/",
-        sourceUrl: "https://github.com/ChiragChrg/arms-v3",
+        liveUrl: "",
+        sourceUrl: "https://github.com/reyestin/My-Portfolio",
         technologies: [
-            TECH_STACK.TypeScript,
-            TECH_STACK.MongoDB,
-            TECH_STACK.Authjs,
+            TECH_STACK.HTML,
+            TECH_STACK.CSS,
+            TECH_STACK.JavaScript
         ],
         features: [
             {
-                title: "Anonymous Login",
-                description: "Students can conveniently  log in anonymously to browse and access study materials."
+            title: "Landing Page",
+            description: "Introduces the Vaper Viper brand through a visually engaging homepage with clear navigation."
             },
             {
-                title: "Secure Access",
-                description: "Utilizes Authjs for secure authentication of authorized users using Google and Github Auth providers."
+            title: "About Us",
+            description: "Provides information about the shop through a dedicated About Us section."
             },
             {
-                title: "Streamlined Resource Management",
-                description: "Efficient upload, update, and management of study materials using EdgeStore cloud storage."
+            title: "Products",
+            description: "Displays vape products in an organized and visually engaging layout."
             },
             {
-                title: "Document Download",
-                description: "Easily download PDF documents for offline access."
-            },
-            {
-                title: "Efficient Data Management",
-                description: "Automatically caches query results, reduces redundant network requests, and improves overall application performance using Tanstack Query."
-            },
-            COMMON_FEATURES.Responsive,
-            COMMON_FEATURES.SEO
+            title: "Contact",
+            description: "Provides contact information and a dedicated section for visitors to connect with the shop."
+            }
         ],
-        logoSize: 50,
-        versions: [
-            {
-                title: "ARMS v4",
-                version: "4",
-                url: "https://arms-v4.vercel.app/"
-            },
-            {
-                title: "ARMS v3",
-                version: "3",
-                url: "https://arms-v3.vercel.app/"
-            },
-            {
-                title: "ARMS v2",
-                version: "2",
-                url: "https://armss.netlify.app/"
-            },
-            {
-                title: "ARMS v1",
-                version: "1",
-                url: "https://github.com/ChiragChrg/arms-php"
-            },
-        ]
+        logoSize: 55,
+        versions: []
     },
     {
         isHidden: false,
