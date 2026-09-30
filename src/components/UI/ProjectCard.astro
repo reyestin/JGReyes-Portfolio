@@ -13,8 +13,11 @@ const { project, className }: Props = Astro.props;
 
 // PROJECT STATUS CHECK
 let PROJECT_STATUS: string;
+
 if (project.status === "development") {
     PROJECT_STATUS = "BUILDING";
+} else if (!project.liveUrl) {
+    PROJECT_STATUS = "LOCAL";
 } else {
     let isLive = false;
 
@@ -104,30 +107,39 @@ if (project.status === "development") {
 
                 <!-- Project Links -->
                 <div class="flex items-center gap-2">
-                    <a
-                        href={project.sourceUrl}
-                        title={`${project.name} - GitHub`}
-                        target="_blank"
-                        rel="noreferrer"
-                        class="Projects_Link flex"
-                    >
-                        <GithubIcon width={20} height={20} aria-hidden="true" />
-                        <span class="sr-only">
-                            {project.name} - GitHub
-                        </span>
-                    </a>
-                    <a
-                        href={project.liveUrl}
-                        title={`${project.name} Preview`}
-                        target="_blank"
-                        rel="noreferrer"
-                        class="Projects_Link flex"
-                    >
-                        <ArrowUpRightIcon aria-hidden="true" />
-                        <span class="sr-only">
-                            {project.name} Preview
-                        </span>
-                    </a>
+                    {
+                        project.sourceUrl && (
+                            <a
+                                href={project.sourceUrl}
+                                title={`${project.name} - GitHub`}
+                                target="_blank"
+                                rel="noreferrer"
+                                class="Projects_Link flex"
+                            >
+                                <GithubIcon width={20} height={20} aria-hidden="true" />
+                                <span class="sr-only">
+                                    {project.name} - GitHub
+                                </span>
+                            </a>
+                        )
+                    }
+
+                    {
+                        project.liveUrl && (
+                            <a
+                                href={project.liveUrl}
+                                title={`${project.name} Preview`}
+                                target="_blank"
+                                rel="noreferrer"
+                                class="Projects_Link flex"
+                            >
+                                <ArrowUpRightIcon aria-hidden="true" />
+                                <span class="sr-only">
+                                    {project.name} Preview
+                                </span>
+                            </a>
+                        )
+                    }
                 </div>
             </div>
         </div>
